@@ -1,19 +1,21 @@
 // Desafio 1
 //Você foi chamado para ajudar a pintar uma parede em uma casa.
-// A parede tem formato retangular, e você precisa saber quantos metros quadrados de tinta serão necessários para cobri-la. Para isso, você deve calcular a área da parede.
+// A parede tem formato retangular, e você precisa saber quantos metros quadrados de tinta serão necessários para cobri-la.
+// Para isso, você deve calcular a área da parede.
 // A parede tem 4 metros de altura e 5 metros de largura.
 
 //Para calcular a área de um retângulo, usamos a seguinte fórmula:
 // area = largura * altura;
 
 // Dimensões da parede (largura e altura em metros)
-var largura = 5;
-var altura = 4;
+var inLargura = 5;
+var inAltura = 4;
 
 // Calculando a área da parede
+var outAreaRetangulo = inLargura * inAltura
 
 // Exibindo o resultado no console
-console.log("A área da parede é:");
+console.log(`Área da Parede: ${outAreaRetangulo} metros`);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -25,15 +27,17 @@ console.log("A área da parede é:");
 // usuário e exibir uma mensagem de boas-vindas.
 
 // Nome e sobrenome inseridos pelo usuário
-var nome = "João";
-var sobrenome = "Silva";
+var inNome = "João";
+var inSobrenome = "Silva";
 
 // Juntando os nomes com a mensagem de boas-vindas
-  
-       //seu código
+var procNomeCompleto = `${inNome} ${inSobrenome}`
+var outMensagem = `Olá ${procNomeCompleto}! Seja-bem-vindo!`
+
+//seu código
 
 // Exibindo a mensagem no console
-console.log();
+console.log(outMensagem);
 
 
 //-------------------------------------------------------------------------------------------------
@@ -47,15 +51,13 @@ console.log();
 // considerando que todos os anos têm 365 dias.
 
 // Idade do funcionário em anos
-var idadeEmAnos = 30;
+var inIdadeEmAnos = 30;
 
 // Calculando anos em dias
-  
-      //seu código
-
+var outAnosEmDias = inIdadeEmAnos * 365
 
 // Exibindo o resultado no console
-console.log("O funcionário viveu aproximadamente... dias");
+console.log(`O funcionário viveu aproximadamente ${outAnosEmDias} dias.`);
 
 //-------------------------------------------------------------------------------------------------
 
@@ -68,12 +70,12 @@ console.log("O funcionário viveu aproximadamente... dias");
 //  se o evento durou 135 minutos, você deve dizer que ele durou 2 horas e 15 minutos.
 
 // Duração total do evento em minutos
-var duracaoEmMinutos = 135;
+var inDuracaoEmMinutos = 135;
+var inHoraEmMinutos = 60;
 
 // Calculando horas e minutos
-  
-      //seu código
-
+var outMinutosEmHoras = parseInt(inDuracaoEmMinutos / inHoraEmMinutos)
+var outMinutosRestantes = inDuracaoEmMinutos % inHoraEmMinutos
 
 // Exibindo o resultado no console
-console.log("O evento durou ...horas e ... minutos.");
+console.log(`O evento durou ${outMinutosEmHoras} horas e ${outMinutosRestantes} minutos.`);
